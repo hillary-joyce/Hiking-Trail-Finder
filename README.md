@@ -10,7 +10,6 @@ A simple, easy-to-use website that allows you to:
 
 ## APIs Used
 
-- Hiking Trail Data API; 
-- Google Maps; 
-- Open Weather;
-
+- Hiking Trail Data API;
+- Google Maps;
+- Open Weather App;

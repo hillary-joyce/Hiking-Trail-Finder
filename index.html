@@ -1,0 +1,73 @@
+</div>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/icon.ico" />
+	<title>KAIRNS</title>
+
+	<link type='text/css' rel='stylesheet' href='assets/css/style.css' />
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Open+Sans+Condensed:300" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<!-- background, header and search box -->
+	<div class="page-header-background">
+		<div class="page-header">
+			<div class="page-title">
+				<h1 class="header">Kairns</h1>
+				<h2>Find your trail. </h2>
+			</div>
+			<!-- search box -->
+			<div class="search-div">
+				<div class="box">
+				  <div class="container-4">
+				    <input type="text" id="txtAddress" placeholder="Enter Zip or Address" />
+				    <button type="button" class="icon" id="submit"><img class="fa fa-search" src='assets/images/search.png'></button>
+						<label for="radius-options"><br>Within <span id="miles">_</span> Miles</label>
+							<button<form action="">
+  							<input type="radio" name="radius" value="25">25
+  							<input type="radio" name="radius" value="50">50
+  							<input type="radio" name="radius" value="100">100
+							</form>
+							<div id="error-enter-address"></div>
+				  </div>
+				</div>
+			</div>
+			<!-- search results populate below -->
+			<div class="search-results" id="search-results">
+
+			</div>
+		</div>
+	</div>
+
+
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+
+
+		<p>Photo Credit: <a href="https://unsplash.com/@ahmadkadhim" class="credit-link">Ahmad Kadhim</a> & Powered by <a href="https://maps.google.com" class="credit-link">Google Maps</a>, <a href="https://openweathermap.org/" class="credit-link">Open Weather Map</a>, and <a href="https://www.hikingproject.com/" class="credit-link">Hiking Project</a></p>
+		<p>Copyright 2018 by Hillary Scofield</p>
+
+
+	</div>
+
+	<!-- JAVASCRIPT -->
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+	<!-- Google Maps -->
+	<script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSAYHZn9fz13c3bsl_RcS13HJu8wDJXCU&libraries=places">
+    </script>
+	<!-- custom javaScript -->
+	<script type='text/javascript' src='assets/javascript/logic.js'></script>
+
+</body>
+
+</html>
