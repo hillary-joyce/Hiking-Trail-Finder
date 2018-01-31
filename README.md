@@ -13,3 +13,11 @@ A simple, easy-to-use website that allows you to:
 - Hiking Trail Data API;
 - Google Maps;
 - Open Weather App;
+
+## Other Technologies
+- Google Firebase
+- CSS Grid
+- jQuery
+
+## Page Layout Mockup
+![Mock-up Image](assets/images/mockup.jpg?raw=true "Title")
