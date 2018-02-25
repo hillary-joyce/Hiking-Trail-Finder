@@ -8,51 +8,77 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link type='text/css' rel='stylesheet' href='assets/css/reset.css' />
 	<link type='text/css' rel='stylesheet' href='assets/css/style.css' />
-	<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:500|Quicksand:300" rel="stylesheet">
+	<!--Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
 
 <body>
 	<!-- background, header and search box -->
-	<div class="page-header-background">
-		<div class="page-header">
-			<div class="page-title">
-				<h1 class="header">TRAIL FINDER</h1>
-				<p>Find hiking trails in your area</p>
+		<div class="parallax">
+			<div class="parallax__layer parallax__layer--back">
+				<div class="block-layer"><img src="assets/images/m_06_main.jpg"></div>
 			</div>
-			<!-- search box -->
-			<div class="search-div">
-				<div class="box">
-					<div class="container-4">
-						<input type="text" id="txtAddress" placeholder="Enter Zip or Address" />
-						<button type="button" class="icon" id="submit">
-							<img class="fa fa-search" src='assets/images/search.png'>
-						</button>
-						<label for="radius-options"><br>Within <span id="miles">_</span> Miles</label>
-						<button<form action="">
-							<input type="radio" name="radius" value="10">10
-							<input type="radio" name="radius" value="25">25
-							<input type="radio" name="radius" value="50">50
-							</form>
-							<div class="error-address" id="error-enter-address"></div>
-					</div>
+			<div class="parallax__layer parallax__layer--mtn-4">
+				<div class="block-layer"><img src="assets/images/m_06_mtn_4.png"></div>
+			</div>
+			<div class="parallax__layer parallax__layer--mtn-3">
+				<div class="block-layer"><img src="assets/images/m_06_mtn_3.png"></div>
+			</div>
+			<div class="parallax__layer parallax__layer--mtn-2">
+				<div class="block-layer"><img src="assets/images/m_06_mtn_2.png"></div>
+			</div>
+			<div class="parallax__layer parallax__layer--mtn-1">
+				<div class="block-layer"><img src="assets/images/m_06_mtn_1.png"></div>
+			</div>
+			<div class="parallax__layer page-header" id="pageHeader">
+				<div class="page-title">
+					<h1 class="header">TRAIL FINDER</h1>
+					<p>Find hiking trails in your area</p>
 				</div>
 			</div>
-		</div>
-	</div>
-
-			<!-- New Search menu -->
-			<div class="search-menu" id="#searchMenu">
-				<input type="text" id="newTxtAddress" placeholder="New Search" />
-				<button type="button" class="icon" id="newsubmit">
-					<img class="fa fa-search" src='assets/images/search.png'>
-				</button>
+			<div class="parallax__layer parallax__layer--tree-2">
+				<div class="block-layer"><img src="assets/images/m_06_tree_2.png"></div>
+			</div>
+			<div class="parallax__layer parallax__layer--tree-1">
+				<div class="block-layer"><img src="assets/images/m_06_tree_1.png"></div>
 			</div>
 			<!-- search results populate below -->
-			<div class="search-results" id="search-results">
-
+			<div class="parallax__layer page-body">
+				<!-- search box -->
+				<div class="search-div">
+					<p>Where do you want to hike?</p>
+					<div class="box">
+						<div class="container-4">
+							<input type="text" id="txtAddress" placeholder="Enter Zip or Address" />
+							<button type="button" class="icon" id="submit">
+								<img class="fa fa-search" src='assets/images/search.png'>
+							</button>
+							<label for="radius-options"><br>Within <span id="miles">_</span> Miles</label>
+							<button<form action="">
+								<input type="radio" name="radius" value="10">10
+								<input type="radio" name="radius" value="25">25
+								<input type="radio" name="radius" value="50">50
+								</form>
+								<div class="error-address" id="error-enter-address"></div>
+						</div>
+					</div>
+				</div>
+				<div class="search-results" id="search-results"></div>
 			</div>
+		</div>
+
+	<!-- New Search menu -->
+	<div class="search-menu" id="#searchMenu">
+		<input type="text" id="newTxtAddress" placeholder="New Search" />
+		<button type="button" class="icon" id="newsubmit">
+					<img class="fa fa-search" src='assets/images/search.png'>
+				</button>
+	</div>
+
+
+	</div>
 
 
 	<!-- footer -->

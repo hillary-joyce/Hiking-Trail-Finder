@@ -126,9 +126,9 @@ function getTrailInfo() {
           }
           contentDivTitle.html(
             "<img class='trail-img' src='" + trailimg +
-            "'><div class='trail-name'><h3>" +
-            currentTrail.name + "</h3><h4>" +
-            currentTrail.location + "</h4></div>");
+            "'><div class='trail-name'><p class='trail-name-name'>" +
+            currentTrail.name + "</p><p class='trail-name-location'>" +
+            currentTrail.location + "</p></div>");
 
           //Check to see if the trail conditions are known
           //Create a variable to hold the current trail conditions
@@ -391,3 +391,10 @@ $(document).on('click', '.close-trail-info', function(){
 
 //When the user adds a comment
 $(document).on("click", ".addComment", addNewComment);
+
+
+//STYLING
+//When user scrolls down the page, fade the search div
+$(window).scroll(function() {
+    console.log($(".pageHeader").scrollTop());
+});

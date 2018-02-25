@@ -1,58 +1,131 @@
 body {
-  font-family: Helvetica, sans-serif;
-  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin: 0px;
   padding: 0px;
 }
 
 .header {
-  font-family: 'Cormorant Garamond', serif;
   font-size: 10vh;
+  font-weight: 300;
   margin: 0px;
 }
 
-.page-header-background {
-  height: 100vh;
-  background-image: url("../images/daniel-leone-185834-v1.jpg");
-  background-size: 100%;
-  background-repeat: no-repeat;
+/* Parrallax */
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+    position: sticky;
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.parallax__layer img {
+  width: 100vw;
+}
+
+.parallax__layer--back {
+    -webkit-transform: translateZ(-6px)scale(7);
+    transform: translateZ(-6px)scale(7);
+}
+
+.parallax__layer--mtn-4 {
+    -webkit-transform: translateZ(-5px)scale(6);
+    transform: translateZ(-5px)scale(6);
+}
+
+.parallax__layer--mtn-3 {
+    -webkit-transform: translateZ(-4px)scale(5);
+    transform: translateZ(-4px)scale(5);
+}
+
+.parallax__layer--mtn-2 {
+    -webkit-transform: translateZ(-3px)scale(4);
+    transform: translateZ(-3px)scale(4);
+}
+
+.parallax__layer--mtn-1 {
+        -webkit-transform: translateZ(-2px)scale(3);
+    transform: translateZ(-2px)scale(3);
+}
+
+.parallax__layer--tree-2 {
+        -webkit-transform: translateZ(-1px)scale(2);
+    transform: translateZ(-1px)scale(2);
+}
+
+.parallax__layer--tree-1 {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.block-layer {
+    position: absolute;
+    width: 100%;
+}
+
+.page-header {
+  z-index: 0;
+  top: 10vh;
+  text-align: center;
+  -webkit-transform: translateZ(-6px)scale(7);
+  transform: translateZ(-6px)scale(7);
+}
+
+.fa-search {
+  width: 30px !important ;
+}
+
+.page-body {
+  width: 100%;
+  height: 500%;
+  background: white;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  top: 85%;
+  background: white;
+}
+
+.search-div {
+  width: 250px;
+  margin: 30px auto;
 }
 
 .search-results {
-  width: 90%;
-  margin: 0 auto;
-  clear: both;
+  width: 80%;
+  margin: 10px auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-auto-rows: 350px;
   grid-gap: 20px;
   align-content: center;
   justify-content: center;
+  clear:both;
 }
 
 .newTrailTitle {
-  border: 1px solid black;
-  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 0px;
   overflow: hidden;
   display: grid;
   color: white;
 }
 
-.trail-name h3 {
-  font-size: 2em;
-  font-weight: 300;
-}
-
-.trail-name h4 {
-  font-size: 1.5em;
-  font-weight: 300;
-}
 
 
 .trail-img {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   object-fit: cover;
 }
@@ -60,14 +133,30 @@ body {
 .trail-name {
   padding: 20px;
   text-align: center;
-  background: rgba(20, 35, 43,0.7);
+  background: rgba(20, 35, 43,0.6);
   grid-column: 1 / -1;
   grid-row: 1 / -1;
   position: relative;
   display: grid;
   justify-items: center;
   align-items: center;
+  height: 350px;
 }
+
+.trail-name:hover{
+  cursor: pointer;
+  background: rgba(20, 35, 43,0.9);
+  font-weight: 300;
+}
+
+.trail-name-name {
+  font-size: 2em;
+}
+
+.trail-name-location {
+  font-size: 1.5em;
+}
+
 
 /*Divs for overall ratings*/
 .overall-rating {
@@ -76,8 +165,8 @@ body {
   display: inline;
 }
 
-.tiny-mtn {
-  height: 20px;
+.tiny-mtn, .mtn-img {
+  width: 20px !important;
 }
 
 .standard-rating-mtns {
@@ -94,7 +183,7 @@ body {
 
 /*Weather Icons formatting*/
 .weather-icon {
-  height: 22px;
+  width: 25px !important;
 }
 
 .details {
@@ -107,7 +196,6 @@ body {
 }
 
  .mtn-rating img {
-  height: 20px;
   display: inline;
   padding: 10px;
 }
