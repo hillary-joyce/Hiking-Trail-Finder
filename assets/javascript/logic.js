@@ -200,6 +200,7 @@ function getTrailInfo() {
 /////////////When a user clicks the search icon, run the following//////////////
 
 function submissionCallback() {
+  //empty the search results
   $("#search-results").empty();
   //store the value of user input in a variable
   var userInput = $("#txtAddress").val();

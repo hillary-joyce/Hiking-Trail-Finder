@@ -6,8 +6,11 @@
 	<title>Trail Finder</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link type='text/css' rel='stylesheet' href='assets/css/reset.css' />
-	<link type='text/css' rel='stylesheet' href='assets/css/style.css' />
+	<!--Stylesheets -->
+	<!-- Skeleton -->
+	<link type='text/css' rel='stylesheet' href='assets/css/normalize.css'/>
+	<link type='text/css' rel='stylesheet' href='assets/css/skeleton.css'/>
+	<link type='text/css' rel='stylesheet' href='assets/css/style.css'/>
 	<!--Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -35,7 +38,6 @@
 			<div class="parallax__layer page-header" id="pageHeader">
 				<div class="page-title">
 					<h1 class="header">TRAIL FINDER</h1>
-					<p>Find hiking trails in your area</p>
 				</div>
 			</div>
 			<div class="parallax__layer parallax__layer--tree-2">
@@ -48,12 +50,12 @@
 			<div class="parallax__layer page-body">
 				<!-- search box -->
 				<div class="search-div">
-					<p>Where do you want to hike?</p>
+					<p>Find hiking trails in your area</p>
 					<div class="box">
 						<div class="container-4">
-							<input type="text" id="txtAddress" placeholder="Enter Zip or Address" />
+							<input type="text" class="search-box" id="txtAddress" placeholder="Enter Zip or Address" />
 							<button type="button" class="icon" id="submit">
-								<img class="fa fa-search" src='assets/images/search.png'>
+								<img class="fa fa-search" src='assets/images/search-hover.png'>
 							</button>
 							<label for="radius-options"><br>Within <span id="miles">_</span> Miles</label>
 							<button<form action="">
@@ -66,31 +68,23 @@
 					</div>
 				</div>
 				<div class="search-results" id="search-results"></div>
+				<!-- footer -->
+				<div class="footer">
+
+
+					<p>Photo Credit: <a href="https://unsplash.com/@ahmadkadhim" class="credit-link">Ahmad Kadhim</a> & Powered by <a href="https://maps.google.com" class="credit-link">Google Maps</a>, <a href="https://openweathermap.org/" class="credit-link">Open Weather Map</a>,
+						and <a href="https://www.hikingproject.com/" class="credit-link">Hiking Project</a></p>
+						<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+					<p>Copyright 2018 by Hillary Scofield</p>
+
+
+				</div>
 			</div>
+
 		</div>
 
-	<!-- New Search menu -->
-	<div class="search-menu" id="#searchMenu">
-		<input type="text" id="newTxtAddress" placeholder="New Search" />
-		<button type="button" class="icon" id="newsubmit">
-					<img class="fa fa-search" src='assets/images/search.png'>
-				</button>
 	</div>
 
-
-	</div>
-
-
-	<!-- footer -->
-	<div class="footer">
-
-
-		<p>Photo Credit: <a href="https://unsplash.com/@ahmadkadhim" class="credit-link">Ahmad Kadhim</a> & Powered by <a href="https://maps.google.com" class="credit-link">Google Maps</a>, <a href="https://openweathermap.org/" class="credit-link">Open Weather Map</a>,
-			and <a href="https://www.hikingproject.com/" class="credit-link">Hiking Project</a></p>
-		<p>Copyright 2018 by Hillary Scofield</p>
-
-
-	</div>
 
 	<!-- JAVASCRIPT -->
 	<!-- jQuery -->
