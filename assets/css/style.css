@@ -241,8 +241,27 @@ input[type="radio"] {
   align-self: center;
   padding: 20px;
 }
+
+.close-trail-info {
+  position: absolute;
+  background: white;
+  color: #555;
+  margin: 10px;
+}
+
+.close-trail-info:hover {
+  background: white;
+  color: black;
+}
 /********** MODAL - COMMENTS *************/
 .newCommentDiv {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.user-comment {
   display: grid !important;
   grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
@@ -278,7 +297,6 @@ input[type="radio"] {
 
 .details {
   text-align: left;
-  /* padding-right: -50px; */
 }
 
 .map {

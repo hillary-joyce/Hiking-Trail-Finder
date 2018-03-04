@@ -182,10 +182,10 @@ function getTrailInfo() {
 
           //Add a container div for the trail modal
           var contentDivContainer = $("<div class='trail-info-container' display='block'>");
-          var closebutton = $("<button class='close-trail-info'>").html("Close");
+          var closebutton = $("<button class='close-trail-info'>").html("Close &times;");
           //Append details, map, and comments to the div
-          $(contentDivContainer).append(contentDivMap, contentDivDetails, contentDivComments);
-          $(contentDivMain).append(closebutton, contentDivContainer).hide();
+          $(contentDivContainer).append(closebutton, contentDivMap, contentDivDetails, contentDivComments);
+          $(contentDivMain).append(contentDivContainer).hide();
 
           //Append the new divs to the search results div
           $("#search-results").append(contentDivTitle);
