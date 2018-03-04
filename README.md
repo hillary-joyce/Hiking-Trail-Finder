@@ -1,4 +1,6 @@
 # hiking-trail-finder
+Live site:https://hillary-joyce.github.io/hiking-trail-finder/
+
 Based off the project "Karins" https://github.com/0n11san/Project1
 GW Coding Bootcamp, January 2018
 
