@@ -174,7 +174,7 @@ function getTrailInfo() {
             "<img class='mtn-img' value='5' src='assets/images/mtn-1.png'></div>"
             //div for user comments
             +
-            "<div><label for='userComment'>Comments</label>" +
+            "<div class='userCommentDiv'><label for='userComment'>Comments</label>" +
             "<textarea rows='4' cols='30' class='userComment' id='userComment" + i + "'></textarea>" +
             "</div></div><button class='addComment u-full-width' name='" + currentTrail.name +
             "'>Add Comment</button>" +

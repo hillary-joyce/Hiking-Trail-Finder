@@ -16,7 +16,7 @@ button:hover {
   color: white;
 }
 .header {
-  font-size: 8em;
+  font-size: 7.25em;
   font-weight: 300;
   margin: 0px;
 }
@@ -329,3 +329,47 @@ input[type="radio"] {
 .footer a:hover {
   color: #bfdfde;
 }
+
+/*********** MEDIA QUERIES ********************/
+/*MOBILE*/
+@media (max-width: 420px) {
+  .page-header {
+    top: 5vh;
+  }
+  .header {
+    font-size: 2em;
+  }
+  .page-body {
+    top: 20%;
+  }
+  .search-div {
+    margin: 20% auto;
+  }
+  .search-box {
+    width: 80%;
+  }
+
+  .trail-info-container {
+    width: 90%;
+    padding: 10px;
+    display: block !important;
+    text-align: center;
+  }
+  .close-trail-info {
+    right: 10px;
+  }
+  .newCommentDiv {
+    grid-template-columns: 1fr 1fr;
+  }
+  .userCommentDiv {
+    grid-column: 1/span 2;
+  }
+}
+/*PHABLET*/
+@media (min-width: 550px) {}
+
+/*TABLET*/
+@media (min-width: 750px) {}
+
+/*DESKTOP*/
+@media (min-width: 1000px) {}
