@@ -161,12 +161,12 @@ function getTrailInfo() {
           //includes mountian rating system, date, and comment inputs
           contentDivComments.html("<h2>Leave a Review</h2>" +
             //Main comment div
-            "<div class='newCommentDiv grid-3'>" +
+            "<div class='newCommentDiv'>" +
             "<div><label for='dateVisited'>Date Visited</label>" +
             "<input type='date' class='dateVisited' id='dateVisited" + i + "'>" +
             "</input></div>" +
             //Add div for mountains (rating system)
-            "<div class='mtn-rating'>" +
+            "<div class='mtn-rating'>" + "<label for='mtn-img'>Rating</label>" +
             "<img class='mtn-img' value='1' src='assets/images/mtn-1.png'>" +
             "<img class='mtn-img' value='2' src='assets/images/mtn-1.png'>" +
             "<img class='mtn-img' value='3' src='assets/images/mtn-1.png'>" +
@@ -175,8 +175,8 @@ function getTrailInfo() {
             //div for user comments
             +
             "<div><label for='userComment'>Comments</label>" +
-            "<input type='text' class='userComment' id='userComment" + i + "'>" +
-            "</div></div><button class='addComment' name='" + currentTrail.name +
+            "<textarea rows='4' cols='30' class='userComment' id='userComment" + i + "'></textarea>" +
+            "</div></div><button class='addComment u-full-width' name='" + currentTrail.name +
             "'>Add Comment</button>" +
             "<h2>User Comments</h2><div class='user-reviews' prevcomment='" + currentTrail.name.split(' ').join('') + "'>");
 
@@ -233,9 +233,9 @@ function submissionCallback() {
         getTrailInfo();
       });
     // Scroll the user down to search results
-    $('html, body').animate({
-      scrollTop: $("#search-results").offset().top
-    }, 2000);
+    // $('html, body').animate({
+    //   scrollTop: $("#search-results").offset().top
+    // }, 2000);
   }
 };
 
@@ -301,7 +301,7 @@ function addRatings() {
   database.ref(trailID + "/comments").on("child_added", function(snapshot) {
     //create a div to hold the comment
     //add the date and the comment
-    var newComment = $("<div class='grid-3 user-comment'>").html("<div>" + snapshot.val().date +
+    var newComment = $("<div class='user-comment'>").html("<div>" + snapshot.val().date +
       "</div><div>" + snapshot.val().comment + "</div>");
     //Add the new rating visually with mountains
     var newRating = $("<div>");
