@@ -97,6 +97,7 @@ button:hover {
 .search-div {
   z-index: 1;
   top: 20vh;
+  height: 100px;
   text-align: center;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);

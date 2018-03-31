@@ -389,7 +389,7 @@ $(document).on('click', '.newTrailTitle', function() {
 $(document).on('click', '.close-trail-info', function(){
   console.log("close button clicked");
   $('.newTrailDescription').hide(600);
-})
+});
 
 //When the user adds a comment
 $(document).on("click", ".addComment", addNewComment);
