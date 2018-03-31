@@ -202,6 +202,7 @@ function getTrailInfo() {
 function submissionCallback() {
   //empty the search results
   $("#search-results").empty();
+  $("#search-results").attr("style", "height: 1600px");
   //store the value of user input in a variable
   var userInput = $("#txtAddress").val();
   //trim the user input to the form needed for the api

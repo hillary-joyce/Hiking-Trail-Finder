@@ -38,6 +38,17 @@
 			<div class="parallax__layer page-header" id="pageHeader">
 					<h1 class="header">TRAIL FINDER</h1>
 			</div>
+			<!-- search box -->
+			<div class="parallax__layer search-div" id="search-box">
+				<p>Find hiking trails in your area</p>
+					<div class="container-4">
+						<input type="text" class="search-box" id="txtAddress" placeholder="Enter Zip or Address" />
+						<button type="button" class="icon" id="submit">
+							<img class="fa fa-search" src='assets/images/search-hover.png'>
+						</button>
+							<div class="error-address" id="error-enter-address"></div>
+					</div>
+			</div>
 			<div class="parallax__layer parallax__layer--tree-2">
 				<div class="block-layer"><img src="assets/images/m_06_tree_2.png"></div>
 			</div>
@@ -45,29 +56,9 @@
 				<div class="block-layer"><img src="assets/images/m_06_tree_1.png"></div>
 			</div>
 			<!-- search results populate below -->
-			<div class="parallax__layer page-body">
-				<!-- search box -->
-				<div class="search-div">
-					<p>Find hiking trails in your area</p>
-					<div class="box">
-						<div class="container-4">
-							<input type="text" class="search-box" id="txtAddress" placeholder="Enter Zip or Address" />
-							<button type="button" class="icon" id="submit">
-								<img class="fa fa-search" src='assets/images/search-hover.png'>
-							</button>
-							<label for="radius-options"><br>Within <span id="miles">_</span> Miles</label>
-							<button<form action="">
-								<input type="radio" name="radius" value="10">10
-								<input type="radio" name="radius" value="25">25
-								<input type="radio" name="radius" value="50">50
-								</form>
-								<div class="error-address" id="error-enter-address"></div>
-						</div>
-					</div>
-				</div>
-				<div class="search-results" id="search-results"></div>
+			<div class="parallax__layer search-results" id="search-results"></div>
 				<!-- footer -->
-				<div class="footer">
+			<div class="parralax__layer footer">
 
 					<p>Copyright 2018 by Hillary Scofield.Powered by <a href="https://maps.google.com" class="credit-link">Google Maps</a>,
 						<a href="https://openweathermap.org/" class="credit-link">Open Weather Map</a>,
@@ -77,13 +68,9 @@
 						<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
 							CC 3.0 BY</a></p>
 
-
 				</div>
 			</div>
-
 		</div>
-
-	</div>
 
 
 	<!-- JAVASCRIPT -->

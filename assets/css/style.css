@@ -88,34 +88,36 @@ button:hover {
 
 .page-header {
   z-index: 0;
-  top: 10vh;
+  top: 5vh;
   text-align: center;
-  -webkit-transform: translateZ(-6px)scale(7);
-  transform: translateZ(-6px)scale(7);
-}
-
-.page-body {
-  width: 100vw;
-  height: fit-content;
-  background: white;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  top: 70%;
-  background: white;
-  padding-top: 10px;
+}
+
+.search-div {
+  z-index: 1;
+  top: 20vh;
+  text-align: center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .search-results {
-  width: 80%;
-  margin: 10px auto;
+  top: 70vh;
+  min-height: 400px;
+  background: white;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  padding-top: 10px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 350px));
   grid-auto-rows: 350px;
   grid-gap: 20px;
   align-content: center;
   justify-content: center;
   clear:both;
 }
+
 
 .newTrailTitle {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.4);
@@ -166,11 +168,6 @@ button:hover {
 
 /********************** SEARCH DIV FORMATTING ********************************/
 
-.search-div {
-  width: 80%;
-  text-align:center;
-  margin: 0 auto;
-}
 
 .search-div p{
   font-size: 2.5em;
@@ -192,9 +189,6 @@ button:hover {
   width: 26px;
 }
 
-.container-4 label {
-  display: inline;
-}
 
 input[type="radio"] {
   margin-left: 10px;
@@ -313,8 +307,6 @@ input[type="radio"] {
   background: #4f7b84;
   color: white;
   text-align: center;
-  padding: 15px;
-  margin-top: 30px
 }
 
 .footer p {
